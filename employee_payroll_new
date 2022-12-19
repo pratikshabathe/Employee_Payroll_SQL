@@ -77,3 +77,15 @@ mysql> insert into employee_payroll(name,salary,start)values ('Bill',1000000.00,
 Query OK, 3 rows affected (0.15 sec)
 Records: 3  Duplicates: 0  Warnings: 0
 
+UC4_Retrieve_Database
+
+mysql> select * from employee_payroll
+    -> ;
++----+---------+---------+------------+
+| id | name    | salary  | start      |
++----+---------+---------+------------+
+|  1 | Bill    | 1000000 | 2010-10-30 |
+|  2 | Tersia  | 2000000 | 2019-11-13 |
+|  3 | Charlie | 3000000 | 2020-05-21 |
++----+---------+---------+------------+
+3 rows in set (0.11 sec)
